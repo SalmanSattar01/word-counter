@@ -14,12 +14,12 @@ const answers:{
 
     ])
 
-    const words = answers.Sentence.trim().split(" ")
+    const words = answers.Sentence.trim().split(/\s+/);
 
     // Print the array of words to the console
 
-    console.log(words)
+    console.log(words);
 
     //Print the word count of the sentence of the console
 
-    console.log(`Your sentence word count is ${words.length}`)
+    console.log(`Your sentence word count is ${words.length}`);
